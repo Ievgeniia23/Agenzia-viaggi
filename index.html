@@ -1,13 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenaia dei viaggi</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito:wght@800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="logo-wrapper">
+          <h3>Mondo Incanto</h3>
+          <p class="logo-text">agenzia di viaggi</p>
+        </div>
+        <h1>Il mondo intero è nelle tue mani</h1>
+       
+      </div>
+    </header>
+     <nav>
+          <a href="#home">Chi siamo</a>
+          <a href="#destination">Destinazioni</a>
+          <a href="#contatti">Contatti</a>
+        </nav>
+
+    <div class="container layout">
+      <aside class="sidebar">
+        <div class="contact-window">
+          <form action="/submit_form.php" method="post" target="_blank">
+            <h4 class="title-window">
+              Raccontaci cosa desideri e lasciaci un contatto: ti raggiungeremo
+              subito!
+            </h4>
+            <label for="name">Tuo nome</label>
+            <input type="text" id="name" name="name" max="30" />
+            <label for="tel">Telefono</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              max="15"
+              placeholder="+39 123 456 789"
+              pattern="^[0-9+\-\s()]{7,20}$"
+              title="Inserisci un numero valido (7–20 cifre, +, -, spazi)"
+              required
+            />
+
+            <label for="message">Tuo messaggio</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="12"
+              cols="20"
+              placeholder="scrivi qua tuo messaggio max 200 caratteri"
+            ></textarea>
+            <button type="button" class="btnMessage">
+              Invia la tua richiesta
+            </button>
+          </form>
+        </div>
+      </aside>
+
+      <main>
+        <section id="home">
+          <h2>
+            Viaggia con <span>Mondo Incanto</span> verso destinazioni da sogno
+          </h2>
+          <p class="home-text">
+            Scopri destinazioni da sogno, esperienze uniche e avventure
+            indimenticabili. Il nostro team ti guiderà nella scelta del viaggio
+            perfetto per te, con offerte personalizzate e servizi esclusivi.
+          </p>
+          <a href="#destination" class="btn">Scopri le nostre destinazioni</a>
+        </section>
+
+        <section id="Gallery">
+          <h2>Galleria</h2>
+          <div class="gallery-wrapp">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+            <div class="item item6"></div>
+            <div class="item item7"></div>
+            <div class="item item8"></div>
+            <div class="item item9"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="container">
+
+    </footer>
+
+    <script src="/main.js"></script>
+  </body>
 </html>
