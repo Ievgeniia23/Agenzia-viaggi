@@ -22,49 +22,88 @@
           <p class="logo-text">agenzia di viaggi</p>
         </div>
         <h1>Il mondo intero è nelle tue mani</h1>
-       
       </div>
     </header>
-     <nav>
-          <a href="#home">Chi siamo</a>
-          <a href="#destination">Destinazioni</a>
-          <a href="#contatti">Contatti</a>
-        </nav>
+    <nav>
+      <a href="#home">Chi siamo</a>
+      <a href="#destination">Destinazioni</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
 
     <div class="container layout">
       <aside class="sidebar">
         <div class="contact-window">
-          <form action="/submit_form.php" method="post" target="_blank">
-            <h4 class="title-window">
-              Raccontaci cosa desideri e lasciaci un contatto: ti raggiungeremo
-              subito!
-            </h4>
-            <label for="name">Tuo nome</label>
-            <input type="text" id="name" name="name" max="30" />
-            <label for="tel">Telefono</label>
-            <input
-              type="tel"
-              id="tel"
-              name="tel"
-              max="15"
-              placeholder="+39 123 456 789"
-              pattern="^[0-9+\-\s()]{7,20}$"
-              title="Inserisci un numero valido (7–20 cifre, +, -, spazi)"
-              required
-            />
+          <form
+            class="contact-form"
+            action="/submit_form.php"
+            method="post"
+            target="_blank"
+          >
+            <fieldset class="contact-message">
+              <legend>
+                Raccontaci cosa desideri e lasciaci un contatto: ti
+                raggiungeremo subito!
+              </legend>
+              <!-- <h4 class="title-window"></h4> -->
+              <div class="form-field">
+                <label for="name">Tuo nome</label>
+                <input type="text" id="name" name="name" maxlength="30" />
+              </div>
+              <div class="form-field">
+                <label for="tel">Telefono</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  maxlength="15"
+                  placeholder="+39 123 456 789"
+                  pattern="^[0-9+\-\s()]{7,20}$"
+                  title="Inserisci un numero valido (7–20 cifre, +, -, spazi)"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">Tuo messaggio</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="12"
+                  cols="20"
+                  maxlength="200"
+                  placeholder="Scrivi qua il tuo messaggio, max 200 caratteri"
+                ></textarea>
+              </div>
 
-            <label for="message">Tuo messaggio</label>
-            <textarea
-              name="message"
-              id="message"
-              rows="12"
-              cols="20"
-              placeholder="scrivi qua tuo messaggio max 200 caratteri"
-            ></textarea>
-            <button type="button" class="btnMessage">
-              Invia la tua richiesta
-            </button>
+              <button type="submit">
+                Invia la tua richiesta
+              </button>
+            </fieldset>
+
+            <fieldset class="booking-form">
+              <legend>Prenota il tuo appuntamento</legend>
+<div class="form-field">
+  <label for="name2">Nome</label>
+  <input type="text" id="name2" name="name2" required>
+</div>
+<div class="form-field">
+  <label for="visit-date">Scegli la data dell'appuntamento</label>
+  <input type="date" id="visit-date" name="visit-date" required>
+</div>
+<div class="form-field">
+  <label for="visit-time">Scegli l'ora dell'appuntamento</label>
+  <input type="time" id="visit-time" name="visit-time" min="09:00" max="18.00" step="1800" required>
+</div>
+<button type="submit" >Invia i dati</button>
+
+
+            </fieldset>
           </form>
+          <form
+            class="booking"
+            action="/submit_form.php"
+            method="post"
+            target="_blank"
+          ></form>
         </div>
       </aside>
 
@@ -97,9 +136,7 @@
         </section>
       </main>
     </div>
-    <footer class="container">
-
-    </footer>
+    <footer class="container"></footer>
 
     <script src="/main.js"></script>
   </body>
