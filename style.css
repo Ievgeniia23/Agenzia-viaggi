@@ -1,6 +1,16 @@
+:root {
+  --light-yellow: rgb(235, 235, 162);
+  --dark-yellow: rgb(219, 209, 21);
+  --light-yellow-green: rgb(181, 202, 98);
+  --dark-yellow-green:rgb(57, 70, 6);
+  --light-pink: rgb(217, 159, 198);
+  --dark-pink: rgb(110, 8, 76);
+  --dark-violet: rgb(68, 68, 114);
+}
+
 body {
   font-family: Merienda;
-  background-color: rgb(235, 235, 162);
+  background-color: var(--light-yellow);
 }
 
 .container {
@@ -82,11 +92,11 @@ nav.scrolled {
 
 nav > a {
   text-decoration: none;
-  color: rgb(181, 202, 98);
+  color: var(--light-yello-green);
   font-size: 26px;
 }
 nav.scrolled > a {
-  color: rgb(202, 98, 167);
+  color: var(--light-pink);
 }
 
 h3 {
@@ -97,7 +107,7 @@ h3 {
 .logo-text {
   margin: 0;
   font-size: small;
-  color: rgb(219, 209, 21);
+  color: var(--dark-yellow);
 }
 
 .layout {
@@ -107,10 +117,10 @@ h3 {
   align-items: flex-start;
 }
 .sidebar {
-  background-color: violet;
+  background-color: var(--light-pink);
   display: flex;
   justify-content: center;
-  border: 1px solid violet;
+  border: 1px solid var(--light-pink);
   border-radius: 12px;
 }
 main {
@@ -123,28 +133,27 @@ main {
   flex-direction: column;
   align-items: center;
   width: 260px;
-  border: 1px solid rgb(219, 209, 21);
+  border: 1px solid var(--dark-yellow);
   border-radius: 12px;
-  padding: 10px;
+  padding: 20px;
 }
 
 fieldset {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  border: 1px solid yellow;
+  border: 1px solid var(--dark-yellow);
   border-radius: 12px;
   padding: 12px;
   gap: 12px;
-  justify-content:center;
+  justify-content: center;
 }
 form {
   display: flex;
-  gap: 12px;
+  gap: 40px;
   flex-direction: column;
   padding: 10px;
   font-size: 12px;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
 legend {
@@ -171,15 +180,15 @@ textarea {
 input,
 textarea,
 form button {
-  border: 1px solid rgb(161, 154, 16);
-  background-color: rgb(236, 218, 220);
+  border: 1px solid var(--light-yellow-green);
+  background-color: var(--light-yellow);
   border-radius: 12px;
   padding: 10px;
 }
 input,
 textarea,
 form button:active {
-  border-color: rgb(23, 147, 77);
+  border-color: var(--dark-yellow-green);
 }
 
 /* input[type="tel"]:invalid {
@@ -196,7 +205,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color: rgb(219, 209, 21);
+  background-color:var(--dark-yellow);
   border-radius: 4px;
 }
 
@@ -222,7 +231,7 @@ home-text {
 .item {
   width: 300px;
   height: 160px;
-  border: 1px solid rgb(68, 68, 114);
+  border: 1px solid var(--dark-violet);
   border-radius: 12px;
 }
 
