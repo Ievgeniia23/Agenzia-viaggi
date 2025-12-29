@@ -1,9 +1,11 @@
 :root {
   --light-yellow: rgb(235, 235, 162);
-  --dark-yellow: rgb(219, 209, 21);
+  --dark-yellow: rgb(253, 216, 53);
   --light-yellow-green: rgb(181, 202, 98);
-  --dark-yellow-green:rgb(57, 70, 6);
-  --light-pink: rgb(217, 159, 198);
+  --light-yellow-green-rgba: rgba(181, 202, 98, 0.3);
+  --dark-yellow-green: rgb(107, 121, 61);
+
+  --light-pink: rgb(231, 207, 222);
   --dark-pink: rgb(110, 8, 76);
   --dark-violet: rgb(68, 68, 114);
 }
@@ -13,28 +15,11 @@ body {
   background-color: var(--light-yellow);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-/* header {
-  background-image: url("./img/strada-arcobaleno.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  max-width: 1200px;
-  background-size: cover;
-  padding: 80px 30px 80px;
-  margin-bottom: 60px;
-} */
-
 .hero {
   position: relative;
   min-height: 80vh;
-  /* overflow: visible; */
   padding: 80px 30px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .hero .container {
   position: relative;
@@ -112,10 +97,13 @@ h3 {
 
 .layout {
   /* height: 100vh; */
+  padding: 30px;
   display: flex;
   gap: 40px;
   align-items: flex-start;
+  justify-content: center;
 }
+
 .sidebar {
   background-color: var(--light-pink);
   display: flex;
@@ -127,7 +115,16 @@ main {
   flex: 1;
   padding: 20px;
   min-width: 0;
+  align-items: center;
 }
+section {
+  margin-bottom: 100px;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
 .contact-window {
   display: flex;
   flex-direction: column;
@@ -205,7 +202,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color:var(--dark-yellow);
+  background-color: var(--dark-yellow);
   border-radius: 4px;
 }
 
@@ -222,6 +219,45 @@ h2 {
 home-text {
   text-align: center;
 }
+/* ---------------ACCORDION------------ */
+
+.accordion-button {
+  background-color: var(--light-yellow-green);
+  color: #333;
+  border-radius: 12px !important;
+  margin-bottom: 6px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.2;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem var(--light-yellow-green-rgba);
+  border-color: var(--light-yellow-green);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--dark-yellow-green);
+  color: #000;
+}
+
+.accordion-body {
+  background-color: var(--light-yellow);
+  color: #333;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.accordion-item {
+  border: none;
+  background: transparent;
+}
+
+.accordion-img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* --------------------------------------- */
+
 .gallery-wrapp {
   display: flex;
   flex-wrap: wrap;
