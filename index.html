@@ -36,6 +36,9 @@
     </nav>
 
     <div class="layout">
+
+      <!-- --------------------SIDEBAR----------------------------------- -->
+
       <aside class="sidebar">
         <div class="contact-window">
           <form
@@ -50,8 +53,8 @@
                 raggiungeremo subito!
               </legend>
               <div class="form-field">
-                <label for="name">Tuo nome</label>
-                <input type="text" id="name" name="name" maxlength="30" />
+                <label for="name-contact">Tuo nome</label>
+                <input type="text" id="name-contact" name="name-contact" maxlength="20" placeholder="Maria Rossi" required />
               </div>
               <div class="form-field">
                 <label for="tel">Telefono</label>
@@ -61,7 +64,7 @@
                   name="tel"
                   maxlength="15"
                   placeholder="+39 123 456 789"
-                  pattern="^[0-9+\-\s()]{7,20}$"
+                  pattern="[0-9+() -]{7,20}"
                   title="Inserisci un numero valido (7–20 cifre, +, -, spazi)"
                   required
                 />
@@ -92,7 +95,7 @@
               <legend>Prenota il tuo appuntamento</legend>
               <div class="form-field">
                 <label for="name2">Nome</label>
-                <input type="text" id="name2" name="name2" required />
+                <input type="text" id="name2" name="name2" placeholder="Maria Rossi" required />
               </div>
               <div class="form-field">
                 <label for="visit-date">Scegli la data dell'appuntamento</label>

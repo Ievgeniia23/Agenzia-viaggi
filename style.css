@@ -1,9 +1,11 @@
 :root {
+  --basic-black: #000;
   --light-yellow: rgb(235, 235, 162);
   --dark-yellow: rgb(253, 216, 53);
   --light-yellow-green: rgb(181, 202, 98);
   --light-yellow-green-rgba: rgba(181, 202, 98, 0.3);
   --dark-yellow-green: rgb(107, 121, 61);
+  --light-grey: rgb(193, 191, 191);
 
   --light-pink: rgb(231, 207, 222);
   --dark-pink: rgb(110, 8, 76);
@@ -111,19 +113,6 @@ h3 {
   border: 1px solid var(--light-pink);
   border-radius: 12px;
 }
-main {
-  flex: 1;
-  padding: 20px;
-  min-width: 0;
-  align-items: center;
-}
-section {
-  margin-bottom: 100px;
-}
-.container {
-  max-width: 1200px;
-  padding: 0 24px;
-}
 
 .contact-window {
   display: flex;
@@ -156,46 +145,37 @@ form {
 legend {
   text-align: center;
 }
-/* .form-field {
- align-items: center;
-} */
-/* input[type="tel"]:invalid {
-  border-color: rgb(147, 23, 46);
-  box-shadow: 0 0 5px rgba(147, 23, 46, 0.5);
-}
-
-input[type="tel"]:valid {
-  border-color: rgb(40, 167, 69);
-} */
 
 textarea {
-  /* margin-bottom: 10px; */
   resize: none;
   overflow-y: scroll;
 }
 
+*::placeholder {
+  color: var(--light-grey);
+}
 input,
 textarea,
 form button {
   border: 1px solid var(--light-yellow-green);
-  background-color: var(--light-yellow);
   border-radius: 12px;
+  background-color: var(--light-yellow);
+  color: var(--basic-black);
   padding: 10px;
 }
-input,
-textarea,
+form button {
+  background-color: var(--light-yellow-green);
+}
+
+input:focus,
+textarea:focus,
 form button:active {
-  border-color: var(--dark-yellow-green);
+  border-color: var(--dark-yellow);
+  outline: none;
 }
 
-/* input[type="tel"]:invalid {
-  border-color: rgb(147, 23, 46);
-  box-shadow: 0 0 5px rgba(147, 23, 46, 0.5);
-}
 
-input[type="tel"]:valid {
-  border-color: rgb(40, 167, 69);
-} */
+
 
 textarea::-webkit-scrollbar {
   width: 8px;
@@ -209,6 +189,20 @@ textarea::-webkit-scrollbar-thumb {
 form button {
   width: 160px;
   padding: 4px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  min-width: 0;
+  align-items: center;
+}
+section {
+  margin-bottom: 100px;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 24px;
 }
 
 h2 {
