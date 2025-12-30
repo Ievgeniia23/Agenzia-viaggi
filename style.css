@@ -56,8 +56,7 @@ nav {
   top: 20px;
   z-index: 1000;
   max-width: 80%;
-  /* margin: 0 auto; */
-  margin-top: -300px;
+   margin-top: -300px;
   margin-bottom: 300px;
   margin-inline: auto;
 
@@ -98,7 +97,6 @@ h3 {
 }
 
 .layout {
-  /* height: 100vh; */
   padding: 30px;
   display: flex;
   gap: 40px;
@@ -173,9 +171,6 @@ form button:active {
   border-color: var(--dark-yellow);
   outline: none;
 }
-
-
-
 
 textarea::-webkit-scrollbar {
   width: 8px;
