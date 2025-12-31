@@ -20,6 +20,29 @@ window.addEventListener("scroll", () => {
 
 
 
+
+// -------------tour-carousel--------------------
+
+ $(document).ready(function () {
+   $(".tour-carousel").slick({
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     dots: true,
+     arrows: true,
+     infinite: true,
+     autoplay: true,
+     autoplaySpeed: 3000,
+     responsive: [
+       {
+         breakpoint: 768,
+         settings: {
+           slidesToShow: 1,
+         },
+       },
+     ],
+   });
+ });
+
 //  Скрывать nav при прокрутке вниз
 
 

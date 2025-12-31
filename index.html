@@ -16,7 +16,11 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+
+<link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="hero">
@@ -135,13 +139,49 @@
           </div>
         </section>
 
+<!-- -------------------------CAROUSEL--------------------------- -->
+
+<div class="tour-carousel">
+  <div class="tour-card slide-card">
+    <img src="/img/accordion/europa.webp" alt="Europa">
+    <h3>Europa</h3>
+    <p>Dal Mediterraneo ai paesi nordici — una varietà incredibile.</p>
+  </div>
+  <div class="tour-card slide-card">
+    <img src="/img/accordion/asia.webp" alt="Asia">
+    <h3>Asia</h3>
+    <p>Templi, spiagge tropicali, metropoli futuristiche.</p>
+  </div>
+  <div class="tour-card slide-card">
+    <img src="/img/accordion/africa.webp" alt="Africa">
+    <h3>Africa</h3>
+    <p>Safari, deserto e culture millenarie.</p>
+  </div>
+   <div class="tour-card slide-card">
+    <img src="/img/accordion/europa.webp" alt="Europa">
+    <h3>Europa</h3>
+    <p>Dal Mediterraneo ai paesi nordici — una varietà incredibile.</p>
+  </div>
+  <div class="tour-card slide-card">
+    <img src="/img/accordion/asia.webp" alt="Asia">
+    <h3>Asia</h3>
+    <p>Templi, spiagge tropicali, metropoli futuristiche.</p>
+  </div>
+  <div class="tour-card slide-card">
+    <img src="/img/accordion/africa.webp" alt="Africa">
+    <h3>Africa</h3>
+    <p>Safari, deserto e culture millenarie.</p>
+  </div>
+</div>
+
+
+<!-- -------------------ACCORDION---------------------------------- -->
+
         <section id="destination">
           <div class="container">
           <h2>Destinazioni</h2>
-
-          <!-- -------------------ACCORDION---------------------------------- -->
-
           <div class="accordion" id="accordionDestinations">
+
   <!-- EUROPA -->
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingEurope">
@@ -261,22 +301,138 @@
     </div>
   </div>
 </div>
-
         </section>
+
+<!-- -------------------Galleria-----------------------         -->
 
         <section id="gallery">
           <div  class="container">
           <h2>Galleria</h2>
           <div class="gallery-wrapp">
-            <div class="item item1"></div>
-            <div class="item item2"></div>
-            <div class="item item3"></div>
-            <div class="item item4"></div>
-            <div class="item item5"></div>
-            <div class="item item6"></div>
-            <div class="item item7"></div>
-            <div class="item item8"></div>
-            <div class="item item9"></div>
+            <div class="item item1">
+              <img srcset="
+              ./img/gallery/galleria1@1x.webp 300w,
+              ./img/gallery/galleria1mob@1x.webp 360w,
+              ./img/gallery/galleria1@2x.webp 600w,
+              ./img/gallery/galleria1mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria1@1x.webp"
+                            alt="Due persone in montagna"
+              >
+            </div>
+
+ <div class="item item10">
+               <img srcset="
+              ./img/gallery/galleria10@1x.webp 300w,
+              ./img/gallery/galleria10mob@1x.webp 360w,
+              ./img/gallery/galleria10@2x.webp 600w,
+              ./img/gallery/galleria10mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria10@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+
+            <!-- <div class="item item2">
+               <img srcset="
+              ./img/gallery/galleria2@1x.webp 300w,
+              ./img/gallery/galleria2mob@1x.webp 360w,
+              ./img/gallery/galleria2@2x.webp 600w,
+              ./img/gallery/galleria2mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria2@1x.webp"
+                            alt="Due persone in montagna"
+               >
+            </div> -->
+
+            <div class="item item3">
+               <img srcset="
+              ./img/gallery/galleria3@1x.webp 300w,
+              ./img/gallery/galleria3mob@1x.webp 360w,
+              ./img/gallery/galleria3@2x.webp 600w,
+              ./img/gallery/galleria3mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria1@3x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+            <div class="item item4">
+               <img srcset="
+              ./img/gallery/galleria4@1x.webp 300w,
+              ./img/gallery/galleria4mob@1x.webp 360w,
+              ./img/gallery/galleria4@2x.webp 600w,
+              ./img/gallery/galleria4mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria4@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+            <div class="item item5">
+               <img srcset="
+              ./img/gallery/galleria5@1x.webp 300w,
+              ./img/gallery/galleria5mob@1x.webp 360w,
+              ./img/gallery/galleria5@2x.webp 600w,
+              ./img/gallery/galleria5mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria5@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+            <div class="item item6">
+               <img srcset="
+              ./img/gallery/galleria6@1x.webp 300w,
+              ./img/gallery/galleria6mob@1x.webp 360w,
+              ./img/gallery/galleria6@2x.webp 600w,
+              ./img/gallery/galleria6mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria6@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+            <div class="item item7">
+               <img srcset="
+              ./img/gallery/galleria7@1x.webp 300w,
+              ./img/gallery/galleria7mob@1x.webp 360w,
+              ./img/gallery/galleria7@2x.webp 600w,
+              ./img/gallery/galleria7mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria7@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+            <div class="item item8">
+               <img srcset="
+              ./img/gallery/galleria8@1x.webp 300w,
+              ./img/gallery/galleria8mob@1x.webp 360w,
+              ./img/gallery/galleria8@2x.webp 600w,
+              ./img/gallery/galleria8mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria8@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+            <div class="item item9">
+               <img srcset="
+              ./img/gallery/galleria9@1x.webp 300w,
+              ./img/gallery/galleria9mob@1x.webp 360w,
+              ./img/gallery/galleria9@2x.webp 600w,
+              ./img/gallery/galleria9mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria9@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+            <!-- <div class="item item10">
+               <img srcset="
+              ./img/gallery/galleria10@1x.webp 300w,
+              ./img/gallery/galleria10mob@1x.webp 360w,
+              ./img/gallery/galleria10@2x.webp 600w,
+              ./img/gallery/galleria10mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria10@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div> -->
           </div>
           </div>
         </section>
@@ -287,6 +443,10 @@
 
       </div>
     </footer>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
