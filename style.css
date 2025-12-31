@@ -1,10 +1,10 @@
 :root {
   --basic-black: #000;
-  --light-yellow: rgb(235, 235, 162);
-  --dark-yellow: rgb(253, 216, 53);
+  --light-yellow: rgb(245, 245, 196);
+  --dark-yellow: rgb(194, 173, 77);
   --light-yellow-green: rgb(181, 202, 98);
   --light-yellow-green-rgba: rgba(181, 202, 98, 0.3);
-  --dark-yellow-green: rgb(107, 121, 61);
+  --dark-yellow-green: rgb(76, 87, 39);
   --light-grey: rgb(193, 191, 191);
 
   --light-pink: rgb(231, 207, 222);
@@ -21,8 +21,8 @@ body {
   position: relative;
   min-height: 80vh;
   padding: 80px 30px;
-  /* margin-bottom: 20px; */
-}
+  }
+  
 .hero .container {
   position: relative;
   z-index: 2;
@@ -87,7 +87,12 @@ nav.scrolled > a {
 
 h3 {
   font-size: 22px;
-  margin-bottom: 0;
+  text-align: center;
+  color: var(--dark-yellow-green);
+ margin-bottom: 20px;
+}
+.logo {
+ margin-bottom: 0;
   color: rgba(17, 9, 44, 0.6);
 }
 .logo-text {
@@ -199,6 +204,16 @@ section {
   max-width: 1200px;
   padding: 0 24px;
 }
+p {
+  text-indent: 30px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+span {
+  color: var(--dark-yellow-green);
+}
+/* ------------------HOME-------------------------- */
+
 
 h2 {
   text-align: center;
@@ -208,49 +223,99 @@ h2 {
 home-text {
   text-align: center;
 }
+ul {
+margin: 20px auto;
+}
 
 /* -------------------------CAROUSEL--------------------------- */
+carousel-wrapper {
+  position: relative;
+  padding: 0 40px; /* отступы для стрелок */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .tour-card {
-  background:linear-gradient(135deg, var(--light-yellow-green), var(--dark-yellow-green));
+  height: 360px;
+  width: 260px;               
+
+  background:linear-gradient(135deg, var(--light-yellow-green) 70%, var(--dark-yellow-green) 100%);
   border-radius: 12px;
   padding: 15px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.4s ease;
+  
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .tour-card img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover; 
   border-radius: 12px;
   margin-bottom: 12px;
 }
-
-.tour-carousel .tour-card {
-  width: 260px;          
-  height: 360px;         
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-
-.tour-carousel .tour-card img {
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-
 .tour-carousel .slick-slide {
-  margin-right: 20px;
+    margin-right: 20px;
+   
+ }
+.tour-carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 40px;
 }
 
 
-.tour-carousel .slick-list {
-  margin-right: -20px;
+.slick-dots li button:before {
+  font-size: 10px;
+  color: var(--dark-yellow-green);   
+  opacity: 0.75;
 }
 
+.slick-dots li.slick-active button:before {
+  color: var(--dark-yellow);         
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 28px;                          
+  color: var(--dark-yellow-green);          
+  opacity: 0.9;
+}
+
+.carousel-wrapper .slick-prev,
+.carousel-wrapper .slick-next {
+  top: 40%;
+  z-index: 10;
+}
+.carousel-wrapper .slick-prev { left: -2px; }
+.carousel-wrapper .slick-next { right: 25px; }
+
+.carousel-wrapper .slick-dots {
+  margin-top: 30px; 
+  position: relative;
+  bottom: 0;
+}
 
 
 
