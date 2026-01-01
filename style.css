@@ -3,26 +3,51 @@
   --light-yellow: rgb(245, 245, 196);
   --dark-yellow: rgb(194, 173, 77);
   --light-yellow-green: rgb(181, 202, 98);
-  --light-yellow-green-rgba: rgba(181, 202, 98, 0.3);
   --dark-yellow-green: rgb(76, 87, 39);
+  /* --light-yellow-green: #cce88f; 
+  --dark-yellow-green: #C5D9A3; */
+  --light-yellow-green-rgba: rgba(181, 202, 98, 0.3);
   --light-grey: rgb(193, 191, 191);
 
   --light-pink: rgb(231, 207, 222);
   --dark-pink: rgb(110, 8, 76);
-  --dark-violet: rgb(68, 68, 114);
+  /* --dark-violet: rgb(68, 68, 114); */
+  --dark-violet: #4b3f72;
 }
 
 body {
-  font-family: Merienda;
+  font-family: "Raleway", sans-serif;
   background-color: var(--light-yellow);
+}
+
+h1 {
+  font-family: Merienda;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 140px;
+  letter-spacing: 5px;
+}
+h1,
+h2,
+h3 {
+  font-family: Merienda;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+  color: var(--dark-yellow-green);
+  margin-bottom: 20px;
 }
 
 .hero {
   position: relative;
   min-height: 80vh;
   padding: 80px 30px;
-  }
-  
+}
+
 .hero .container {
   position: relative;
   z-index: 2;
@@ -42,14 +67,6 @@ body {
   z-index: -1;
 }
 
-h1 {
-  font-family: Merienda;
-  font-size: 60px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 140px;
-  letter-spacing: 5px;
-}
 nav {
   padding: 20px 120px;
   position: sticky;
@@ -85,14 +102,15 @@ nav.scrolled > a {
   color: var(--light-pink);
 }
 
-h3 {
-  font-size: 22px;
-  text-align: center;
-  color: var(--dark-yellow-green);
- margin-bottom: 20px;
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .logo {
- margin-bottom: 0;
+  font-family: Merienda;
+  text-align: start;
+  margin-bottom: 0;
   color: rgba(17, 9, 44, 0.6);
 }
 .logo-text {
@@ -214,7 +232,6 @@ span {
 }
 /* ------------------HOME-------------------------- */
 
-
 h2 {
   text-align: center;
   margin-bottom: 40px;
@@ -224,7 +241,7 @@ home-text {
   text-align: center;
 }
 ul {
-margin: 20px auto;
+  margin: 20px auto;
 }
 
 /* -------------------------CAROUSEL--------------------------- */
@@ -237,19 +254,23 @@ carousel-wrapper {
 
 .tour-card {
   height: 360px;
-  width: 260px;               
+  width: 260px;
 
-  background:linear-gradient(135deg, var(--light-yellow-green) 70%, var(--dark-yellow-green) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--light-yellow-green) 70%,
+    var(--dark-yellow-green) 100%
+  );
   border-radius: 12px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
- 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+
   display: flex;
   flex-direction: column;
   gap: 8px;
   transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.4s ease;
-  
+
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s forwards ease-out;
@@ -269,14 +290,13 @@ carousel-wrapper {
 .tour-card img {
   width: 100%;
   height: 180px;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
 }
 .tour-carousel .slick-slide {
-    margin-right: 20px;
-   
- }
+  margin-right: 20px;
+}
 .tour-carousel {
   position: relative;
   max-width: 100%;
@@ -284,22 +304,21 @@ carousel-wrapper {
   padding: 0 40px;
 }
 
-
 .slick-dots li button:before {
   font-size: 10px;
-  color: var(--dark-yellow-green);   
+  color: var(--dark-yellow-green);
   opacity: 0.75;
 }
 
 .slick-dots li.slick-active button:before {
-  color: var(--dark-yellow);         
+  color: var(--dark-yellow);
   opacity: 1;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 28px;                          
-  color: var(--dark-yellow-green);          
+  font-size: 28px;
+  color: var(--dark-yellow-green);
   opacity: 0.9;
 }
 
@@ -308,17 +327,18 @@ carousel-wrapper {
   top: 40%;
   z-index: 10;
 }
-.carousel-wrapper .slick-prev { left: -2px; }
-.carousel-wrapper .slick-next { right: 25px; }
+.carousel-wrapper .slick-prev {
+  left: -2px;
+}
+.carousel-wrapper .slick-next {
+  right: 25px;
+}
 
 .carousel-wrapper .slick-dots {
-  margin-top: 30px; 
+  margin-top: 30px;
   position: relative;
   bottom: 0;
 }
-
-
-
 
 /* ---------------ACCORDION------------ */
 
@@ -386,12 +406,10 @@ carousel-wrapper {
   object-fit: cover;
   display: block;
   transition: scale 0.4s ease-in-out;
-  
 }
 .item:hover img {
   scale: 1.2;
 }
-
 
 /* .item1 {
   background-image: url("./img/galleria1.jpg");
