@@ -6,7 +6,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-// отслеживание скролла
+// ---------------- NAV SCROLL -----------------
 
  const nav = document.querySelector("nav");
 
@@ -20,43 +20,64 @@ window.addEventListener("scroll", () => {
 
 
 
-
 // -------------tour-carousel--------------------
 
- $(document).ready(function () {
-   $(".tour-carousel").slick({
-     slidesToShow: 3,
-     slidesToScroll: 1,
-     dots: true,
-     arrows: true,
-     infinite: true,
-     autoplay: true,
-     autoplaySpeed: 3000,
-     responsive: [
-       {
-         breakpoint: 768,
-         settings: {
-           slidesToShow: 1,
-         },
-       },
-     ],
-   });
- });
+fetch("./favourite-tours.json")
+  .then((response) => response.json())
+  .then((tours) => {
+    const carousel = document.querySelector(".tour-carousel");
 
-//  Скрывать nav при прокрутке вниз
+    tours.forEach((tour) => {
+      carousel.innerHTML += `
+        <div class="tour-card">
+        <img src="${tour.img}" alt="${tour.title}" />
+          <h3>${tour.title}</h3>
+          <p>${tour.description}</p>
+        </div>
+      `;
+    });
+
+    initSlider();
+  })
+  .catch((err) => console.error("Errore di caricamento:", err));
 
 
-//    let lastScroll = 0;
-//    const nav = document.querySelector("nav");
-
-//    window.addEventListener("scroll", () => {
-//      const currentScroll = window.scrollY;
-
-//      if (currentScroll > lastScroll && currentScroll > 100) {
-//        nav.style.transform = "translate(-50%, 120%)"; // уезжает вниз
-//      } else {
-//        nav.style.transform = "translate(-50%, 0)";
-//      }
-
-//      lastScroll = currentScroll;
+//  $(document).ready(function () {
+//    $(".tour-carousel").slick({
+//      slidesToShow: 3,
+//      slidesToScroll: 1,
+//      dots: true,
+//      arrows: true,
+//      infinite: true,
+//      autoplay: true,
+//      autoplaySpeed: 3000,
+//      responsive: [
+//        {
+//          breakpoint: 768,
+//          settings: {
+//            slidesToShow: 1,
+//          },
+//        },
+//      ],
 //    });
+//  });
+
+function initSlider() {
+  $(".tour-carousel").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+}

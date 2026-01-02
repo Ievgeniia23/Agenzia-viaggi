@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Toscana Autentica",
+    "img": "/img/carousel/toscana.webp",
+    "description": "Colline verdi, borghi medievali e ottimi vini: la Toscana regala emozioni autentiche e paesaggi indimenticabili."
+  },
+  {
+    "id": 2,
+    "title": "Magia del Marocco",
+    "img": "/img/carousel/marocco.webp",
+    "description": "Città imperiali, mercati profumati e deserti dorati: il Marocco incanta con tradizioni secolari."
+  },
+  {
+    "id": 3,
+    "title": "Bali Paradiso Tropicale",
+    "img": "/img/carousel/bali.webp",
+    "description": "Spiagge da sogno, templi mistici e natura vibrante: Bali è il luogo perfetto per rilassarsi e vivere avventure tropicali."
+  },
+  {
+    "id": 4,
+    "title": "Fiordi della Norvegia",
+    "img": "/img/carousel/norvegia.webp",
+    "description": "Montagne imponenti, cascate spettacolari e acque profonde: un viaggio nella natura più autentica."
+  },
+  {
+    "id": 5,
+    "title": "Safari in Kenya",
+    "img": "/img/carousel/kenya.webp",
+    "description": "Incontri ravvicinati con leoni, elefanti e giraffe tra savane dorate e tramonti infuocati africani."
+  },
+  {
+    "id": 6,
+    "title": "Francia Romantica",
+    "img": "/img/carousel/parigi.webp",
+    "description": "Castelli eleganti, vigneti raffinati e città piene di fascino: la Francia conquista i sensi."
+  },
+  {
+    "id": 7,
+    "title": "Oman Tra Dune e Mare",
+    "img": "/img/carousel/oman.webp",
+    "description": "Canyon rocciosi, spiagge incontaminate e dune infinite: l’Oman sorprende con autenticità e avventura."
+  },
+  {
+    "id": 8,
+    "title": "Canarie in Famiglia",
+    "img": "/img/carousel/canarie.webp",
+    "description": "Clima perfetto tutto l’anno, spiagge sicure e divertimento per bambini: vacanza ideale per famiglie."
+  },
+  {
+    "id": 9,
+    "title": "Disneyland & Parigi",
+    "img": "/img/carousel/disneyland.webp",
+    "description": "La magia di Disneyland unita allo charme di Parigi: un viaggio che fa sognare grandi e piccoli."
+  }
+]

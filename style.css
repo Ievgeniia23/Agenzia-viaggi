@@ -30,8 +30,9 @@ h1 {
 }
 h1,
 h2,
-h3 {
+h3,h4,h5 {
   font-family: Merienda;
+   color: var(--dark-yellow-green);
   letter-spacing: 0.5px;
 }
 
@@ -247,15 +248,14 @@ ul {
 /* -------------------------CAROUSEL--------------------------- */
 carousel-wrapper {
   position: relative;
-  padding: 0 40px; /* отступы для стрелок */
+  padding: 0 40px; 
   max-width: 100%;
   margin: 0 auto;
 }
 
 .tour-card {
-  height: 360px;
-  width: 260px;
-
+  height: 400px;
+  width: 280px;
   background: linear-gradient(
     135deg,
     var(--light-yellow-green) 70%,
@@ -265,12 +265,10 @@ carousel-wrapper {
   padding: 15px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-
   display: flex;
   flex-direction: column;
   gap: 8px;
   transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.4s ease;
-
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s forwards ease-out;
@@ -286,6 +284,14 @@ carousel-wrapper {
     transform: translateY(0);
   }
 }
+.tour-card h3 {
+  text-indent: 0;
+  width: 160px;
+  height: 12px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
 
 .tour-card img {
   width: 100%;
@@ -293,6 +299,11 @@ carousel-wrapper {
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
+}
+.tour-card p {
+  text-indent: 0;
+  font-size: 14px;
+  line-height: 1.4; 
 }
 .tour-carousel .slick-slide {
   margin-right: 20px;
@@ -333,7 +344,6 @@ carousel-wrapper {
 .carousel-wrapper .slick-next {
   right: 25px;
 }
-
 .carousel-wrapper .slick-dots {
   margin-top: 30px;
   position: relative;
