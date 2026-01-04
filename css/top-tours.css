@@ -1,0 +1,104 @@
+/* -------------------------CAROUSEL--------------------------- */
+carousel-wrapper {
+  position: relative;
+  padding: 0 40px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tour-card {
+  height: 380px;
+  width: 280px;
+  background: linear-gradient(
+    135deg,
+    var(--light-yellow-green) 70%,
+    var(--dark-yellow-green) 100%
+  );
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tour-card h3 {
+  text-indent: 0;
+  width: 160px;
+  height: 12px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.tour-card p {
+  text-indent: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.tour-carousel .slick-slide {
+  margin-right: 20px;
+}
+.tour-carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: var(--dark-yellow-green);
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--dark-yellow);
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 28px;
+  color: var(--dark-yellow-green);
+  opacity: 0.9;
+}
+
+.carousel-wrapper .slick-prev,
+.carousel-wrapper .slick-next {
+  top: 40%;
+  z-index: 10;
+}
+.carousel-wrapper .slick-prev {
+  left: -2px;
+}
+.carousel-wrapper .slick-next {
+  right: 25px;
+}
+.carousel-wrapper .slick-dots {
+  margin-top: 30px;
+  position: relative;
+  bottom: 0;
+}
