@@ -1,0 +1,24 @@
+:root {
+  --basic-black: #000;
+  --light-yellow: rgb(245, 245, 196);
+  --dark-yellow: rgb(194, 173, 77);
+  --light-yellow-green: rgb(181, 202, 98);
+  --dark-yellow-green: rgb(76, 87, 39);
+  /* --light-yellow-green: #cce88f; 
+  --dark-yellow-green: #C5D9A3; */
+  --light-yellow-green-rgba: rgba(181, 202, 98, 0.3);
+  --light-grey: rgb(193, 191, 191);
+
+  --light-pink: rgb(231, 207, 222);
+  --dark-pink: rgb(110, 8, 76);
+  /* --dark-violet: rgb(68, 68, 114); */
+  --dark-violet: #4b3f72;
+
+  --base-font: "Raleway", sans-serif;
+  --decorative-font: "Merienda", cursive;
+}
+
+body {
+  font-family: var(--base-font);
+  background-color: var(--light-yellow);
+}
