@@ -1,36 +1,19 @@
 
 const nav = document.querySelector("nav");
-// const sidebar = document.querySelector(".sidebar");
-// const hero = document.querySelector(".hero");
-
+const openBtn = document.querySelector(".open-btn");
+const closeBtn = document.querySelector(".close-btn");
 
 window.addEventListener("scroll", () => {
-  
-
- 
-  
+   
 if (window.scrollY > 50) {
   nav.classList.add("is-fixed", "scrolled");
   
 } else {
   nav.classList.remove("is-fixed", "scrolled");
-  
-}
-    
+ }
 
-  // Sidebar
-  // if (sidebar && hero) {
-  //   const heroHeight = hero.offsetHeight;
-  //   if (scrollY > heroHeight - 100) {
-  //     sidebar.classList.add("is-sticky");
-  //   } else {
-  //     sidebar.classList.remove("is-sticky");
-  //   }
-  // }
 });
 
-
-// Загрузка туров и инициализация слайдера
 fetch("./favourite-tours.json")
   .then((response) => response.json())
   .then((tours) => {
@@ -69,3 +52,27 @@ function initSlider() {
     ],
   });
 }
+// <!-- ------------------MODAL NAVIGATION--------------------- -->
+
+
+
+openBtn.addEventListener("click", () => {
+  nav.classList.toggle("is-open");
+});
+
+closeBtn.addEventListener("click", () => {
+  nav.classList.remove("is-open");
+});
+
+nav.addEventListener("click", (e) => {
+  if (e.target === nav) {
+    // клик именно по nav, а не по ul или li
+    nav.classList.remove("is-open");
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    nav.classList.remove("is-open");
+  }
+});

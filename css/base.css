@@ -52,7 +52,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-ul {
+.home-list {
   margin: 20px auto;
 }
 .layout {
@@ -74,9 +74,18 @@ section {
   margin-bottom: 100px;
 }
 .container {
+  width: 100%;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+@media (min-width: 769px){
+.container {
   max-width: 1200px;
   padding: 0 24px;
 }
+}
+
 p {
   text-indent: 30px;
   text-align: justify;
@@ -84,6 +93,9 @@ p {
 }
 span {
   color: var(--dark-yellow-green);
+}
+a {
+  text-decoration: none;
 }
 
 

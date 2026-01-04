@@ -35,13 +35,20 @@
   <body>
     <header class="hero">
       <div class="nav-placeholder">
-       <nav>
-      <a href="#home">Chi siamo</a>
-      <a href="#popular-tours">Top</a>
-      <a href="#destination">Destinazioni</a>
-      <a href="#gallery">Galleria</a>
-      <a href="#contatti">Contatti</a>
-    </nav>
+ <nav>
+   <button type="button" class="close-btn">
+          <svg class="cross-icon">
+            <use href="./img/sprite.svg#icon-burger-cross"></use>
+          </svg> 
+        </button>
+  <ul class="nav-list">
+    <li><a href="#home">Chi siamo</a></li>
+    <li><a href="#popular-tours">Top</a></li>
+    <li><a href="#destination">Destinazioni</a></li>
+    <li><a href="#gallery">Galleria</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+  </ul>
+</nav>
     </div>
     
       <div class="container">
@@ -51,10 +58,11 @@
           <p class="logo-text">agenzia di viaggi</p>
         </div>
         <button type="button" class="open-btn">
-          <svg class="burger">
+          <svg class="burger-icon">
             <use href="./img/sprite.svg#icon-burger-menu"></use>
           </svg> 
         </button>
+        
         </div>
         <h1>Il mondo intero è nelle tue mani</h1>
       </div>
@@ -164,7 +172,7 @@
 Che tu sogni una fuga romantica, un tour culturale, una vacanza al mare o un’avventura nella natura, ti aiutiamo a trasformare la tua idea in un itinerario su misura.
             </p>
             <h3>Grazie alla nostra rete di partner selezionati, ti garantiamo:</h3>
-            <ul>
+            <ul class="home-list">
               <li>alloggi confortevoli e autentici, scelti con cura</li>
               <li>guide professionali e attività locali originali</li>
               <li>assistenza dedicata prima, durante e dopo il viaggio</li>
@@ -359,17 +367,7 @@ Clicca sulle diverse regioni per scoprire mete selezionate, immagini suggestive 
                loading="lazy">
             </div>
 
-            <!-- <div class="item item2">
-               <img srcset="
-              ./img/gallery/galleria2@1x.webp 300w,
-              ./img/gallery/galleria2mob@1x.webp 360w,
-              ./img/gallery/galleria2@2x.webp 600w,
-              ./img/gallery/galleria2mob@2x.webp 720w"
-              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
-              src="./img/gallery/galleria2@1x.webp"
-                            alt="Due persone in montagna"
-               >
-            </div> -->
+           
 
             <div class="item item3">
                <img srcset="
@@ -382,17 +380,7 @@ Clicca sulle diverse regioni per scoprire mete selezionate, immagini suggestive 
                             alt="Due persone in montagna"
                loading="lazy">
             </div>
-            <div class="item item4">
-               <img srcset="
-              ./img/gallery/galleria4@1x.webp 300w,
-              ./img/gallery/galleria4mob@1x.webp 360w,
-              ./img/gallery/galleria4@2x.webp 600w,
-              ./img/gallery/galleria4mob@2x.webp 720w"
-              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
-              src="./img/gallery/galleria4@1x.webp"
-                            alt="Due persone in montagna"
-               loading="lazy">
-            </div>
+            
             <div class="item item5">
                <img srcset="
               ./img/gallery/galleria5@1x.webp 300w,
@@ -415,6 +403,8 @@ Clicca sulle diverse regioni per scoprire mete selezionate, immagini suggestive 
                             alt="Due persone in montagna"
                loading="lazy">
             </div>
+
+
             <div class="item item7">
                <img srcset="
               ./img/gallery/galleria7@1x.webp 300w,
@@ -423,6 +413,18 @@ Clicca sulle diverse regioni per scoprire mete selezionate, immagini suggestive 
               ./img/gallery/galleria7mob@2x.webp 720w"
               sizes="(min-width:769px) 300px, (max-width:768px) 360px"
               src="./img/gallery/galleria7@1x.webp"
+                            alt="Due persone in montagna"
+               loading="lazy">
+            </div>
+
+            <div class="item item4">
+               <img srcset="
+              ./img/gallery/galleria4@1x.webp 300w,
+              ./img/gallery/galleria4mob@1x.webp 360w,
+              ./img/gallery/galleria4@2x.webp 600w,
+              ./img/gallery/galleria4mob@2x.webp 720w"
+              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
+              src="./img/gallery/galleria4@1x.webp"
                             alt="Due persone in montagna"
                loading="lazy">
             </div>
@@ -448,18 +450,7 @@ Clicca sulle diverse regioni per scoprire mete selezionate, immagini suggestive 
                             alt="Due persone in montagna"
                loading="lazy">
             </div>
-            <!-- <div class="item item10">
-               <img srcset="
-              ./img/gallery/galleria10@1x.webp 300w,
-              ./img/gallery/galleria10mob@1x.webp 360w,
-              ./img/gallery/galleria10@2x.webp 600w,
-              ./img/gallery/galleria10mob@2x.webp 720w"
-              sizes="(min-width:769px) 300px, (max-width:768px) 360px"
-              src="./img/gallery/galleria10@1x.webp"
-                            alt="Due persone in montagna"
-               loading="lazy">
-            </div> -->
-          </div>
+            </div>
           </div>
         </section>
       </main>
@@ -532,6 +523,7 @@ Clicca sulle diverse regioni per scoprire mete selezionate, immagini suggestive 
   </div>
     </div>
 </footer>
+
 
       
 
