@@ -1,7 +1,9 @@
 @import url(./base.css);
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
+@import url(./hero.css);
+@import url(./navigation.css);
+@import url(./components.css);
+@import url(./sidebar.css);
+@import url(./top-tours.css);
+@import url(./destinations.css);
+@import url(./gallery.css);
+@import url(./footer.css);

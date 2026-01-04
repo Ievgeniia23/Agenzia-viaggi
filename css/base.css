@@ -22,3 +22,68 @@ body {
   font-family: var(--base-font);
   background-color: var(--light-yellow);
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--decorative-font);
+  color: var(--basic-black);
+  letter-spacing: 0.5px;
+}
+h3,
+h4,
+h5 {
+  color: var(--dark-yellow-green);
+}
+
+section,
+footer#contatti {
+  scroll-margin-top: 100px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 22px;
+  text-align: center;
+  color: var(--dark-yellow-green);
+  margin-bottom: 20px;
+}
+
+ul {
+  margin: 20px auto;
+}
+.layout {
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+main {
+  flex: 1;
+  padding: 20px;
+  min-width: 0;
+  align-items: center;
+}
+section {
+  margin-bottom: 100px;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 24px;
+}
+p {
+  text-indent: 30px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+span {
+  color: var(--dark-yellow-green);
+}
+
+
