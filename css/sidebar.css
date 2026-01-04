@@ -1,4 +1,20 @@
-.sidebar {
+.contact-window {
+  display: none;
+}
+@media (min-width: 769px){
+.contact-window {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  border: 1px solid var(--light-pink);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+  .sidebar {
   /* position: sticky; */
   /* top: 0px; */
   background: transparent;
@@ -20,17 +36,7 @@
   /* transform: translateY(-4px); */
 }
 
-.contact-window {
-  display: flex;
-  gap: 60px;
-  flex-direction: column;
-  align-items: center;
-  width: 260px;
-  border: 1px solid var(--light-pink);
-  border-radius: 12px;
-  padding: 20px;
-  margin-top: 80px;
-}
+
 
 fieldset {
   display: flex;
@@ -91,5 +97,7 @@ textarea::-webkit-scrollbar {
 textarea::-webkit-scrollbar-thumb {
   background-color: var(--dark-yellow);
   border-radius: 4px;
+}
+
 }
 
