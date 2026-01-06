@@ -4,10 +4,18 @@
   padding: 0;
   cursor: pointer;
 }
+.burger-icon{
+ width: 44px;
+  height: 44px;
+} 
+.cross-icon {
+ width: 38px;
+  height: 38px;
+}
+
 .burger-icon, .cross-icon {
   display: block;
-  width: 40px;
-  height: 40px;
+ 
   padding: 10px 0;
   stroke: var(--light-yellow-green);
   fill: var(--light-pink);

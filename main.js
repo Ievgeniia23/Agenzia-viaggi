@@ -44,7 +44,13 @@ function initSlider() {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1110,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 910,
         settings: {
           slidesToShow: 1,
         },
@@ -76,3 +82,4 @@ document.addEventListener("keydown", (e) => {
     nav.classList.remove("is-open");
   }
 });
+

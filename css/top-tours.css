@@ -1,4 +1,3 @@
-/* -------------------------CAROUSEL--------------------------- */
 carousel-wrapper {
   position: relative;
   padding: 0 40px;
@@ -55,7 +54,7 @@ carousel-wrapper {
 }
 .tour-card p {
   text-indent: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4;
 }
 .tour-carousel .slick-slide {

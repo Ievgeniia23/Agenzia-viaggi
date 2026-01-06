@@ -1,68 +1,65 @@
 .contact-window {
-  display: none;
-}
-@media (min-width: 769px){
-.contact-window {
   display: flex;
-  gap: 60px;
+  gap: 10px;
   flex-direction: column;
   align-items: center;
   width: 260px;
   border: 1px solid var(--light-pink);
   border-radius: 12px;
   padding: 20px;
-  margin-top: 80px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  /* margin-top: 80px; */
 }
 
-  .sidebar {
-  /* position: sticky; */
-  /* top: 0px; */
+.sidebar {
   background: transparent;
-  /* background-color: var(--light-pink); */
   display: flex;
   justify-content: center;
-  align-self: flex-start;
-
-  /* border: 1px solid var(--light-pink); */
+  /* align-self: flex-start; */
+  align-items: center;
   border-radius: 12px;
   transition: box-shadow 0.35s ease, transform 0.35s ease,
     backdrop-filter 0.6s ease 0.15s;
 }
-
-.sidebar.is-sticky {
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
-  /* background: rgba(179, 121, 121, 0.85); */
-  backdrop-filter: blur(10px);
-  /* transform: translateY(-4px); */
-}
-
-
 
 fieldset {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--dark-yellow);
   border-radius: 12px;
-  padding: 20px;
-  gap: 20px;
+  padding: 10px;
+  gap: 12px;
   justify-content: center;
+  align-items: center;
 }
 form {
   display: flex;
-  gap: 40px;
+  gap: 10px;
   flex-direction: column;
-  padding: 10px;
+  padding: 0px;
   font-size: 12px;
   align-items: center;
   justify-content: center;
 }
 legend {
+  font-size: 14px;
+  color: var(--dark-yellow-green);
+  font-weight: 600;
   text-align: center;
+  margin: 0;
 }
-
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
 textarea {
   resize: none;
   overflow-y: scroll;
+}
+.form-field input,
+.form-field textarea {
+  width: 160px;
 }
 
 *::placeholder {
@@ -75,12 +72,11 @@ form button {
   border-radius: 12px;
   background-color: var(--light-yellow);
   color: var(--basic-black);
-  padding: 10px;
+  padding: 4px;
+  width: 160px;
 }
 form button {
   background-color: var(--light-yellow-green);
-   width: 160px;
-  padding: 4px;
 }
 
 input:focus,
@@ -98,6 +94,11 @@ textarea::-webkit-scrollbar-thumb {
   background-color: var(--dark-yellow);
   border-radius: 4px;
 }
-
+.booking-form {
+  border-color: var(--light-yellow-green);
+  background: rgba(255, 255, 255, 0.35);
 }
 
+.contact-message {
+  background: rgba(255, 255, 255, 0.2);
+}
