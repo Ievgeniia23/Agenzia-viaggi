@@ -55,13 +55,13 @@ h3 {
 .home-list {
   margin: 20px auto;
 }
-.layout {
+/* .layout {
   padding: 30px;
   display: flex;
   gap: 40px;
   align-items: flex-start;
   justify-content: center;
-}
+} */
 
 main {
   flex: 1;
@@ -71,6 +71,10 @@ main {
 }
 section {
   margin-bottom: 80px;
+}
+
+button {
+cursor: pointer;
 }
 .container {
   width: 100%;

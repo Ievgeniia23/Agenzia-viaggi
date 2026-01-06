@@ -26,8 +26,18 @@
   margin-top: 24px;
 }
 
+.contact-open-btn {
+color: var(--basic-black);
+background-color: var(--light-yellow-green);
+border: 1px solid var(--dark-yellow-green);
+border-radius: 12px;
+/* padding: 12px 12px; */
+font-size: 16px;
+}
+
 @media (min-width: 769px) {
-    .open-btn, .close-btn {
+    .open-btn, .close-btn, .contact-open-btn {
   display: none;
 }
+
 }
