@@ -35,7 +35,7 @@
 <body>
     <header class="hero">
       <div class="nav-placeholder">
- <nav>
+ <nav aria-label="Main navigation">
    <button type="button" class="close-btn">
           <svg class="cross-icon">
             <use href="./img/sprite.svg#icon-burger-cross"></use>
@@ -75,8 +75,15 @@
             </h2>
             <div class="home-wrapper">
               <!-- --------------------SIDEBAR----------------------------------- -->
-      <aside class="sidebar">
+      <aside class="sidebar" id="sidebar" aria-label="Contact form">
         <div class="contact-window">
+          <button
+  type="button"
+  class="contact-close-btn"
+  aria-label="Chiudi modulo"
+>
+  ✕
+</button>
           <form
             class="contact-form"
             action="/submit_form.php"
@@ -188,8 +195,16 @@ Il mondo ti aspetta — noi siamo pronti a portarti ovunque tu voglia.</p>
     <span>destinazioni</span>
   </div>
 </div>
-  
+  <button
+  type="button"
+  class="contact-open-btn"
+  aria-controls="sidebar"
+  aria-expanded="false"
+>
+  Contattaci
+</button>
 </div>
+
           </div>
           </div>
           
@@ -207,7 +222,7 @@ Scegli il tour che ti ispira di più e inizia a immaginare la tua prossima avven
   </p>
 
   <div class="carousel-wrapper">
-<div class="tour-carousel">
+<div class="tour-carousel" aria-label="Popular tours">
     
 </div>
 </div>

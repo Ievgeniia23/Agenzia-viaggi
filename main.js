@@ -2,6 +2,9 @@
 const nav = document.querySelector("nav");
 const openBtn = document.querySelector(".open-btn");
 const closeBtn = document.querySelector(".close-btn");
+const sidebar = document.querySelector(".sidebar");
+const contactOpenBtn = document.querySelector(".contact-open-btn");
+const contactCloseBtn = document.querySelector(".contact-close-btn");
 
 window.addEventListener("scroll", () => {
    
@@ -44,13 +47,13 @@ function initSlider() {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1110,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 910,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
         },
@@ -59,8 +62,6 @@ function initSlider() {
   });
 }
 // <!-- ------------------MODAL NAVIGATION--------------------- -->
-
-
 
 openBtn.addEventListener("click", () => {
   nav.classList.toggle("is-open");
@@ -72,8 +73,7 @@ closeBtn.addEventListener("click", () => {
 
 nav.addEventListener("click", (e) => {
   if (e.target === nav) {
-    // клик именно по nav, а не по ul или li
-    nav.classList.remove("is-open");
+      nav.classList.remove("is-open");
   }
 });
 
@@ -83,3 +83,34 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+// ------------------------MODAL SIDEBAR------------
+contactOpenBtn.addEventListener("click", () => {
+  if (window.innerWidth <= 768) {
+    sidebar.classList.add("is-open");
+    contactOpenBtn.setAttribute("aria-expanded", "true");
+  }
+});
+
+contactCloseBtn.addEventListener("click", () => {
+  sidebar.classList.remove("is-open");
+  contactOpenBtn.setAttribute("aria-expanded", "false");
+});
+
+sidebar.addEventListener("click", (e) => {
+  if (window.innerWidth <= 768 && e.target === sidebar) {
+    sidebar.classList.remove("is-open");
+    contactOpenBtn.setAttribute("aria-expanded", "false");
+  }
+});
+
+
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+
+  nav.classList.remove("is-open");
+
+  if (window.innerWidth <= 768) {
+    sidebar.classList.remove("is-open");
+    contactOpenBtn.setAttribute("aria-expanded", "false");
+  }
+});
