@@ -63,7 +63,6 @@ h3 {
   justify-content: center;
 }
 
-
 main {
   flex: 1;
   padding: 20px;
@@ -71,7 +70,7 @@ main {
   align-items: center;
 }
 section {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .container {
   width: 100%;
