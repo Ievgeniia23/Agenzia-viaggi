@@ -10,37 +10,28 @@
 
   .sidebar.is-open {
     display: flex;
-    
-  }
+     }
 .contact-window {
   display: flex;
   gap: 10px;
   flex-direction: column;
   align-items: center;
-
   width: 260px;
   padding: 20px;
-
   border: 1px solid var(--light-pink);
   border-radius: 12px;
-
-  background: rgba(255, 255, 255, 0.25);
+background: var(--light-yellow);
+  /* background: rgba(255, 255, 255, 0.25); */
   backdrop-filter: blur(6px);
-
   transform: translateX(100%);
   transition: transform 0.3s ease;
-
   max-height: 90%;
   overflow-y: auto;
 }
-
-  
-
   .sidebar.is-open .contact-window {
     transform: translateX(0);
   }
-  
-
+ 
   /* .sidebar {
   position: relative;
   background: transparent;
@@ -65,9 +56,6 @@
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(6px); */
   /* margin-top: 80px; */
-
-
-
 
 fieldset {
   display: flex;
@@ -120,9 +108,11 @@ form button {
   color: var(--basic-black);
   padding: 4px;
   width: 160px;
+ transition:border 250ms ease,  background-color 250ms ease, transform 250ms ease, box-shadow 250ms ease;
 }
 form button {
   background-color: var(--light-yellow-green);
+  transition: background-color 250ms ease, transform 250ms ease, box-shadow 250ms ease;
 }
 
 input:focus,
@@ -132,6 +122,18 @@ form button:active {
   outline: none;
 }
 
+input:hover,
+textarea:hover {
+  border-color: var(--dark-yellow-green);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+form button:hover {
+background-color: var(--dark-yellow-green);
+transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 textarea::-webkit-scrollbar {
   width: 8px;
 }
@@ -158,6 +160,7 @@ textarea::-webkit-scrollbar-thumb {
   }
 
   .contact-window {
+    background: rgba(255, 255, 255, 0.25);
     transform: none;
     transition: none;
     max-height: none;

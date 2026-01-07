@@ -82,8 +82,10 @@
   class="contact-close-btn"
   aria-label="Chiudi modulo"
 >
-  ✕
-</button>
+<svg class="cross-icon">
+            <use href="./img/sprite.svg#icon-burger-cross"></use>
+          </svg> 
+  </button>
           <form
             class="contact-form"
             action="/submit_form.php"
@@ -141,11 +143,11 @@
                 <input type="text" id="name2" name="name2" placeholder="Maria Rossi" required />
               </div>
               <div class="form-field">
-                <label for="visit-date">Scegli la data dell'appuntamento</label>
+                <label for="visit-date">Scegli la data</label>
                 <input type="date" id="visit-date" name="visit-date" required />
               </div>
               <div class="form-field">
-                <label for="visit-time">Scegli l'ora dell'appuntamento</label>
+                <label for="visit-time">Scegli l'ora</label>
                 <input
                   type="time"
                   id="visit-time"
