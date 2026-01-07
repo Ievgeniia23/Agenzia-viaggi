@@ -1,9 +1,13 @@
-.open-btn, .close-btn {
+.open-btn, .close-btn, .contact-close-btn {
   background: transparent;
   border: none;
   padding: 0;
   cursor: pointer;
 }
+.contact-close-btn .cross-icon {
+ margin: 0;
+}
+
 .burger-icon{
  width: 44px;
   height: 44px;
@@ -15,7 +19,6 @@
 
 .burger-icon, .cross-icon {
   display: block;
- 
   padding: 10px 0;
   stroke: var(--light-yellow-green);
   fill: var(--light-pink);
@@ -27,17 +30,24 @@
 }
 
 .contact-open-btn {
+  align-self: center;
 color: var(--basic-black);
 background-color: var(--light-yellow-green);
 border: 1px solid var(--dark-yellow-green);
-border-radius: 12px;
-/* padding: 12px 12px; */
+border-radius: 18px;
+padding: 8px 32px;
 font-size: 16px;
+margin-top: 30px;
+transition:background-color 250ms ease, transform 250ms ease, box-shadow 250ms ease;
+}
+.contact-open-btn:hover {
+  background-color: var(--dark-yellow-green);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 769px) {
-    .open-btn, .close-btn, .contact-open-btn {
+    .open-btn, .close-btn, .contact-open-btn, .contact-close-btn {
   display: none;
 }
-
 }
