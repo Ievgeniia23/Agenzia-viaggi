@@ -1,20 +1,22 @@
 .home-wrapper {
   display: flex;
   gap: 40px;
-   align-items: flex-start;
+  align-items: flex-start;
 }
 .home-text-wrapp {
   display: flex;
   flex-direction: column;
-  
 }
 .home-stats {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   margin-top: 32px;
+  flex-wrap: wrap;
 }
+
 .stat {
-  flex: 1;
+  flex: 1 1 120px;
+  min-width: 100px;
   text-align: center;
   padding: 16px;
   border-radius: 12px;
@@ -30,4 +32,3 @@
   font-size: 13px;
   opacity: 0.8;
 }
-
