@@ -1,0 +1,23 @@
+.cookie, .privacy {
+  font-family: var(--base-font);
+  line-height: 1.6;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+.cookie h1,
+.cookie h2,
+.cookie p,
+.privacy h1,
+.privacy h2,
+.privacy p {
+    font-family: var(--base-font);
+  color:var(--dark-yellow-green);
+  text-shadow: none;
+  margin:2px;
+  }
+.cookie p a,
+.privacy p a {
+    display: inline-block;
+    margin-top: 20px;
+}
