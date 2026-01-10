@@ -17,7 +17,7 @@ if (window.scrollY > 50) {
 
 });
 
-fetch("./favourite-tours.json")
+fetch("favourite-tours.json")
   .then((response) => response.json())
   .then((tours) => {
     const carousel = document.querySelector(".tour-carousel");
