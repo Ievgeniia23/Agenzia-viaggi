@@ -1,4 +1,4 @@
-# Mondo Incanto
+# Agenzia di viaggi – Mondo Incanto
 
 Sito web responsive per un’agenzia di viaggi, progettato e sviluppato autonomamente.
 Il progetto include design personalizzato, struttura frontend e componenti interattivi.
@@ -43,18 +43,16 @@ Le immagini e le fotografie provengono da **fonti aperte** (open source / stock 
 ![Footer](./img/readme/image-6.png)
 ![Mobile-version](./img/readme/image-7.png)
 
-*(aggiungere immagini del progetto)*
-
 ---
 
 ## Link
 Il progetto è disponibile online:
 * **GitHub:** https://github.com/Ievgeniia23/Agenzia-viaggi
-* **GitHubPages:** ievgeniia23.github.io/Agenzia-viaggi/
+* **GitHubPages:** https://ievgeniia23.github.io/Agenzia-viaggi/
 * **Live demo (Vercel):** https://agenzia-viaggi-jet.vercel.app/
 
 ---
 
 ## Autore
-Progetto realizzato da **Ievgeniia Rychkova**  
+Progetto realizzato da **Ievgeniia Rychkova (ievgeniia.rychkova@gmail.com)**  
 Design, sviluppo frontend e contenuti testuali a cura dell’autore.
