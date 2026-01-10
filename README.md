@@ -2,6 +2,9 @@
 
 Sito web responsive per un’agenzia di viaggi, progettato e sviluppato autonomamente.
 Il progetto include design personalizzato, struttura frontend e componenti interattivi.
+Il sito è completamente responsive, progettato sia per desktop che per dispositivi mobili. 
+Il contenitore principale ha larghezza fissa di 1200px per desktop e 768px per tablet/smartphone, 
+garantendo un layout coerente su diverse risoluzioni.
 
 ---
 
@@ -25,6 +28,12 @@ Il progetto include design personalizzato, struttura frontend e componenti inter
 * Carousel dei tour con dati caricati da file JSON
 * Gestione dei colori e font tramite CSS variables
 * Animazioni leggere per migliorare l’esperienza utente
+
+---
+
+## Ottimizzazione immagini e icone
+
+Tutte le immagini del sito sono ottimizzate in **WebP e adattive** per desktop e mobile. Le icone sono gestite tramite uno **sprite ottimizzato**, garantendo un sito veloce e responsive.
 
 ---
 
