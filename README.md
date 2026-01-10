@@ -35,13 +35,13 @@ Le immagini e le fotografie provengono da **fonti aperte** (open source / stock 
 ---
 
 ## Screenshot
-![Hero-section](image.png)
-![Home-section](image-2.png)
-![Top-tours-section](image-3.png)
-![Destinations-section](image-4.png)
-![Gallery](image-5.png)
-![Footer](image-6.png)
-![Mobile-version](image-7.png)
+![Hero-section](./img/readme/image-1.png)
+![Home-section](./img/readme/image-2.png)
+![Top-tours-section](./img/readme/image-3.png)
+![Destinations-section](./img/readme/image-4.png)
+![Gallery](./img/readme/image-5.png)
+![Footer](./img/readme/image-6.png)
+![Mobile-version](./img/readme/image-7.png)
 
 *(aggiungere immagini del progetto)*
 
